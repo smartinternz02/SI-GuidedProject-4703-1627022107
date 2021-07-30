@@ -4,8 +4,8 @@ In this project we have used Artificial Neural Networks(ANN) to train a model th
 ## Team Members
 1. Ambuj Gupta (19BCE0366)
 2. Karan Rochlani (19BCE0383)
-3. DVS Hitesh Reddy(19BEC1066)
-4. Harshal Vijay Gadge(19BAI10033)
+3. Harshal Vijay Gadge (19BAI10033)
+4. DVS Hitesh Reddy (19BEC1066)
 
 ## Libraries Used
 - Tensorflow
@@ -24,3 +24,6 @@ In this project we have used Artificial Neural Networks(ANN) to train a model th
 - IBM Watson Studio
 - Jupyter Notebook
 - Spyder
+
+## Demo Video Link
+
