@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction</title>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/final1.css') }}">
+	
+	<!--link rel="stylesheet" href="G:\Gayatri Files\Smartbridge\Nidhi\Phishing Website\static\css\style1.css"-->
+
+<style>
+.login{
+top: 20%;
+}
+</style>
+</head>
+
+<body>
+ <!-- Navigation-->
+ <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+ <nav id="sidebar-wrapper">
+	 <ul class="sidebar-nav">
+		 <li class="sidebar-brand"><a href="#page-top">Menu</a></li>
+		 <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+		 
+		 <li class="sidebar-nav-item"><a href="#services">About our team</a></li>
+		 <li class="sidebar-nav-item"><a href="#portfolio">Features</a></li>
+		 <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+	 </ul>
+ </nav>
+
+<div class="main">
+<h1>Phishing Website Detection using Machine Learning<h1>
+</div>
+<form action="{{ url_for('y_predict')}}"method="post">
+    	<input type="text" name="URL" placeholder="Enter the URL to be verified" required="required" />
+		<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+		</form>
+		<br>
+		<br>
+		
+		<div id='result',class='result' style='color:black;font-size:30px;'>{{ prediction_text }}</div>
+		<a href=" {{ url }} "> {{ url }} </a>
+		<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+
+</html>

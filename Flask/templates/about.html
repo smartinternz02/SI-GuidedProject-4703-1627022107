@@ -1,0 +1,152 @@
+{% extends "layout.html" %}
+{% block content %}
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Menu</a></li>
+                <li class="sidebar-nav-item"><a href="/">Home</a></li>
+                <li class="sidebar-nav-item"><a href="/predict">Predict</a></li>
+                <li class="sidebar-nav-item"><a href="/about">About the Model</a></li>
+                <li class="sidebar-nav-item"><a href="/#services">About our team</a></li>
+                <li class="sidebar-nav-item"><a href="/#portfolio">Features</a></li>
+                <li class="sidebar-nav-item"><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Title-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h1 class="page-title-responsive">About the Model</h1>
+                        <p class="lead mb-5">
+                            We have used Artificial Neural Networks to create a model that can detect phishing websites using only the urls
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services-->
+        <section class="content-section bg-primary text-white" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h1>Model & Trainning</h1>
+                        <p class="lead mb-5">
+                            Before stating the ML model training, the data is split into 75-25 i.e., 
+                            8291 training samples & 2764 testing samples. From the dataset, it is clear 
+                            that this is a supervised machine learning task. There are two major types of 
+                            supervised machine learning problems, called classification and regression. 
+                            This data set comes under classification problem, as the input URL is classified 
+                            as phishing (1) or legitimate (0).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section bg-light">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h1>Artificial Neural Network (ANN)</h1>
+                        <p class="lead mb-5">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/ann_jupyter.jpg') }}" alt="..." />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section bg-primary text-white text-center" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    
+                    <h2 class="mb-5">Stats</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                        <h4><strong>98.35%</strong></h4>
+                        <p class="text-faded mb-0">Accuracy</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+                        <h4><strong>96.71%</strong></h4>
+                        <p class="text-faded mb-0">Validation Accuracy</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                        <h4><strong>96.70%</strong></h4>
+                        <p class="text-faded mb-0">Testing Accuracy</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
+                        <h4><strong>Classification</strong></h4>
+                        <p class="text-faded mb-0">Type of model</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section bg-light">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h1>Summary</h1>
+                        <p class="lead mb-5">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/summary.png') }}" alt="..." />
+
+
+                            <ul class="list-inline mb-5">
+                                <li class="list-inline-item">
+                                    <img class="img-fluid" src="{{ url_for('static', filename='img/accuracy_graph.jpg') }}" alt="..." />
+                                </li>
+                                <li class="list-inline-item">
+                                    <img class="img-fluid" src="{{ url_for('static', filename='img/loss_graph.jpg') }}" alt="..." />
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section bg-primary text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">To try our model click the button below ...</h2>
+                <a href="/predict" class="btn btn-xl btn-dark me-4">Predict</a>
+            </div>
+        </section>
+        
+        <section class="content-section bg-light" id="contact">
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-group list-group-flush mb-5">
+                    <li class="list-group-item">Intelligent Systems Squad</li>
+                    <li class="list-group-item">iss@gmail.com</li>
+                    <li class="list-group-item">+91 6738847583</li>
+                </ul>
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link-light rounded-circle mr-3" href="#!"><i class="icon-social-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link-light rounded-circle mr-3" href="#!"><i class="icon-social-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link-light rounded-circle" href="#!"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+                <p class="text-white small mb-0">Copyright &copy; Your Website 2021</p>
+            </div>
+        </footer>
+    </section>
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+{% endblock %}

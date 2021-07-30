@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Phishing Website Detection</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Menu</a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a href="/predict">Predict</a></li>
+                <li class="sidebar-nav-item"><a href="/about">About the Model</a></li>
+                <li class="sidebar-nav-item"><a href="#services">About our team</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Features</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Website Phishing Detection</h1>
+                <h3 class="mb-5"><em>A solution to protect you from online scams</em></h3>
+                <a class="btn btn-primary btn-xl" href="#about">Get Started</a>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Be aware of what's happening with you confidential data!</h2>
+                        <p class="lead mb-5">
+                            We have used Artificial Neural Networks to create a model that can detect phishing websites using only the urls
+                        </p>
+                        <a class="btn btn-dark btn-xl" href="#services">About our team</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="content-section bg-primary text-white text-center" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    
+                    <h2 class="mb-5">About</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                        <h4><strong>Ambuj Gupta</strong></h4>
+                        <p class="text-faded mb-0">19BCE0366</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+                        <h4><strong>Karan Rochlani</strong></h4>
+                        <p class="text-faded mb-0">19BCE0383</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                        <h4><strong>Harshal Vijay Ghadge</strong></h4>
+                        <p class="text-faded mb-0">
+                            19BAI10033
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
+                        <h4><strong>DVS Hitesh Reddy</strong></h4>
+                        <p class="text-faded mb-0">19BEC1066</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio-->
+        <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Features</h3>
+                    <h2 class="mb-5">PROTECT YOURSELF FROM PHISHING ATTACKS</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Watch out for shortened links</div>
+                                    <p class="mb-0"><p>Cybercriminals often use these – from Bitly and other shortening services – to trick you into thinking you are clicking a legitimate link, when in fact you’re being inadvertently directed to a fake site.</p>
+                                </p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/remotar-jobs-s5kTY-Ve1c0-unsplash.jpg') }}" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Browse securely with HTTPs</div>
+                                    <p class="mb-0">You should always, where possible, use a secure website (indicated by https:// and a security “lock” icon in the browser’s address bar) to browse, and especially when submitting sensitive information online, such as credit card details.</p>
+                                </p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/fly-d-P3-YKLS2VKA-unsplash.jpg') }}" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Does that email look suspicious? Read it again</div>
+                                    <p class="mb-0"><p>Plenty of phishing emails are fairly obvious. They will be punctuated with plenty of typos, words in capitals and exclamation marks.</p></p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/markus-spiske-iar-afB0QQw-unsplash.jpg') }}" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Be wary of threats and urgent deadlines</div>
+                                    <p class="mb-0"><p>Some of these threats may include notices about a fine, or advising you to do something to stop your account from being closed. Ignore the scare tactics and contact the company separately via a known and trusted channel.</p>
+                                </p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/scott-rodgerson-BwMcYuHI9OI-unsplash.jpg') }}" alt="..." />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section bg-primary text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+                <a href="/predict" class="btn btn-xl btn-light me-4">Predict</a>
+                <a class="btn btn-xl btn-dark" href="/about">About our model</a>
+            </div>
+        </section>
+        
+        <section class="content-section bg-light" id="contact">
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-group list-group-flush mb-5">
+                    <li class="list-group-item">Intelligent Systems Squad</li>
+                    <li class="list-group-item">iss@gmail.com</li>
+                    <li class="list-group-item">+91 6738847583</li>
+                </ul>
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; Your Website 2021</p>
+            </div>
+        </footer>
+    </section>
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </body>
+</html>
