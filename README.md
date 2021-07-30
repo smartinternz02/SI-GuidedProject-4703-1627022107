@@ -20,9 +20,10 @@ https://drive.google.com/drive/folders/1PFQBYgnNgl9VfmS8vbrZi9v3yGYgmDDr
 - Numpy
 - Matplotlib
 
-## Languages used for Website Building
+## Languages/Libraries used for Website Building
 - HTML
 - CSS
+- Python
 - Bootstrap
 
 ## Applications Used
@@ -30,3 +31,4 @@ https://drive.google.com/drive/folders/1PFQBYgnNgl9VfmS8vbrZi9v3yGYgmDDr
 - IBM Watson Studio
 - Jupyter Notebook
 - Spyder
+- Visual Studio Code
