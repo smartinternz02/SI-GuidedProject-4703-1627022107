@@ -11,10 +11,10 @@ In `app.py` file on line 32 enter your IBM Watson API key
 4. DVS Hitesh Reddy (19BEC1066)
 
 ## Demo Video Link
-https://drive.google.com/file/d/13-SjGuaYG8ZK34ltXTSoAPUTb2vNpsya/view?usp=sharing
+[Click to view Demo Video](https://drive.google.com/file/d/13-SjGuaYG8ZK34ltXTSoAPUTb2vNpsya/view?usp=sharing)
 
 ## Project Drive Link
-https://drive.google.com/drive/folders/1PFQBYgnNgl9VfmS8vbrZi9v3yGYgmDDr
+[Click to view Project Drive](https://drive.google.com/drive/folders/1PFQBYgnNgl9VfmS8vbrZi9v3yGYgmDDr)
 
 ## Libraries Used
 - Tensorflow
