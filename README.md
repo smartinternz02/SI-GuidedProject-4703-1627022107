@@ -7,6 +7,12 @@ In this project we have used Artificial Neural Networks(ANN) to train a model th
 3. Harshal Vijay Gadge (19BAI10033)
 4. DVS Hitesh Reddy (19BEC1066)
 
+## Demo Video Link
+
+
+## Project Drive Link
+https://drive.google.com/drive/folders/1PFQBYgnNgl9VfmS8vbrZi9v3yGYgmDDr
+
 ## Libraries Used
 - Tensorflow
 - Keras
@@ -24,10 +30,3 @@ In this project we have used Artificial Neural Networks(ANN) to train a model th
 - IBM Watson Studio
 - Jupyter Notebook
 - Spyder
-
-## Demo Video Link
-
-
-## Project Drive Link
-https://drive.google.com/drive/folders/1PFQBYgnNgl9VfmS8vbrZi9v3yGYgmDDr
-
