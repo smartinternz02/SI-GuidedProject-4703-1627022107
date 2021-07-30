@@ -3,6 +3,7 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 #importing the inputScript file used to analyze the URL
 import inputScript 
+import requests
 
 
 #load model
@@ -27,10 +28,35 @@ def y_predict():
     '''
     url = request.form['URL']
     checkprediction = inputScript.main(url)
-    prediction = model.predict(checkprediction)
-    prediction1=(prediction[0]>0.5).round()
-    print(prediction1)
-    output=prediction[0]
+
+    API_KEY = "Enter your API Key"
+    token_response = requests.post('https://iam.cloud.ibm.com/identity/token', data={"apikey": API_KEY, "grant_type": 'urn:ibm:params:oauth:grant-type:apikey'})
+    mltoken = token_response.json()["access_token"]
+
+    header = {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + mltoken}
+
+    payload_scoring = {
+        "input_data": [
+            {
+                "field": [["having_IPhaving_IP_Address", "URLURL_Length",
+                "Shortining_Service", "having_At_Symbol", "double_slash_redirecting",
+                "Prefix_Suffix", "having_Sub_Domain", "SSLfinal_State",
+                "Domain_registeration_length", "Favicon", "port", "HTTPS_token",
+                "Request_URL", "URL_of_Anchor", "Links_in_tags", "SFH",
+                "Submitting_to_email", "Abnormal_URL", "Redirect", "on_mouseover",
+                "RightClick", "popUpWidnow", "Iframe", "age_of_domain", "DNSRecord",
+                "web_traffic", "Page_Rank", "Google_Index", "Links_pointing_to_page","Statistical_report"]],
+                "values": checkprediction
+            }]
+    }
+
+    response_scoring = requests.post('https://us-south.ml.cloud.ibm.com/ml/v4/deployments/fa030a19-86b3-4bfa-b552-191ae9ed1211/predictions?version=2021-07-30', json=payload_scoring, headers={'Authorization': 'Bearer ' + mltoken})
+    json_response = response_scoring.json()
+    output = json_response['predictions'][0]['values'][0][1][0]
+    # prediction = model.predict(checkprediction)
+    # prediction1=(prediction[0]>0.5).round()
+    # print(prediction1)
+
     if(output==1):
         pred="Your are safe!!  This is a Legitimate Website."
         
