@@ -29,7 +29,7 @@ def y_predict():
     url = request.form['URL']
     checkprediction = inputScript.main(url)
 
-    API_KEY = "Enter your API Key"
+    API_KEY = "K_rhaG1iU6KkPH07vOYZ-ZaoFZvMIPcYyK0PZj0leV9J"
     token_response = requests.post('https://iam.cloud.ibm.com/identity/token', data={"apikey": API_KEY, "grant_type": 'urn:ibm:params:oauth:grant-type:apikey'})
     mltoken = token_response.json()["access_token"]
 
